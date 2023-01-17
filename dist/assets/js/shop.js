@@ -5,6 +5,7 @@ const Products = getProducts();
 
 Products.then(function (response) {
   let Catli = document.querySelector('#Products');
+  Catli.innerHTML = '';
   response.data.forEach(prd => { 
     Catli.innerHTML += `
     <div class="card mb-3" >

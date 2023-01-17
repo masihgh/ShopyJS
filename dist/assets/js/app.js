@@ -3,6 +3,7 @@
 Rest.get('/products/categories')
   .then(function (response) {
     let Catli = document.querySelector('#Categories_LIST');
+    Catli.innerHTML = '';
     response.data.forEach(cat => { 
       Catli.innerHTML += `
       <div class="col d-flex align-items-start">
@@ -23,6 +24,7 @@ Rest.get('/products/categories')
 Rest.get('/products?limit=10')
 .then(function (response) {
   let Catli = document.querySelector('#Products');
+  Catli.innerHTML = '';
   response.data.forEach(prd => { 
     Catli.innerHTML += `
     <div class="card mb-3" >
