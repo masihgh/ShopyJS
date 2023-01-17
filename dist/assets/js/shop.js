@@ -1,8 +1,4 @@
-
-const Rest = axios.create({
-    baseURL: 'https://fakestoreapi.com'
-  });
-
+const {Rest} = require('./init');
 
 Rest.get('/products')
 .then(function (response) {

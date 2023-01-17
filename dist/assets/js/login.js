@@ -1,7 +1,5 @@
+const {Rest} = require('./init');
 
-const Rest = axios.create({
-  baseURL: 'https://fakestoreapi.com'
-});
 // Example starter JavaScript for disabling form submissions if there are invalid fields
 // Refrence ==> https://getbootstrap.com/docs/5.3/forms/validation/
 (() => {

@@ -1,7 +1,4 @@
-
-const Rest = axios.create({
-  baseURL: 'https://fakestoreapi.com'
-});
+const {Rest} = require('./init');
 
 Rest.get('/products/categories')
   .then(function (response) {
@@ -14,9 +11,6 @@ Rest.get('/products/categories')
     // handle error
     console.log(error);
   })
-
-  
-
 
         
 Rest.get('/products?limit=5')
