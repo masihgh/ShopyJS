@@ -20,7 +20,7 @@ Rest.get('/products/categories')
   })
 
         
-Rest.get('/products?limit=5')
+Rest.get('/products?limit=10')
 .then(function (response) {
   let Catli = document.querySelector('#Products');
   response.data.forEach(prd => { 
@@ -28,14 +28,21 @@ Rest.get('/products?limit=5')
     <div class="card mb-3" >
     <div class="row g-0">
       <div class="col-md-2 d-flex justify-content-center align-items-center">
-        <img src="${prd.image}" class="img-fluid rounded-start" alt="${prd.title} image">
+        <img src="${prd.image}" class="img-fluid rounded-start w-50" alt="${prd.title} image" >
       </div>
       <div class="col-md-10">
         <div class="card-body">
           <h5 class="card-title">${prd.title}</h5>
           <p class="card-text">${prd.description}</p>
-          <p class="card-text h4"><small class="badge text-bg-success">${prd.price}$</small></p><button class="btn btn-dark">
-          <i class="bi bi-basket"></i> Add to Cart</button>
+          <div class='d-flex'>
+            <div>
+            <p class="card-text h4"><small class="badge text-bg-success">${prd.price}$</small></p>
+            </div>
+            <div class="ms-auto">
+            <button class="btn btn-outline-dark"><i class="bi bi-basket"></i> Add to Cart</button>
+            <a href="single-product.html?id=${prd.id}" class="btn btn-dark"><i class="bi bi-eye-fill"></i> Show</a>
+            </div>
+          </div>
         </div>
       </div>
     </div>

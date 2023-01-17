@@ -31,7 +31,7 @@
               <div class="collapse navbar-collapse" id="collapsibleNavId">
                 <ul class="navbar-nav me-auto mb-lg-0">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="index.html"><i class="bi bi-house"></i> Home</a>
+                    <a class="nav-link" href="index.html"><i class="bi bi-house"></i> Home</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="shop.html"><i class="bi bi-basket"></i> Shop</a>
@@ -44,7 +44,7 @@
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="payment.html"><i class="bi bi-credit-card"></i> Payment</a>
-                  </li>                      
+                  </li>
                 </ul>
               </div>
               <a href="cart.html" class="btn btn-dark btn-sm position-relative">
@@ -54,34 +54,45 @@
                   <span class="visually-hidden">cart items</span>
                 </span>
               </a>
-
             </div>
           </nav>
           
     </header>
     <main class="container-fluid py-4">
-      <section class="jumbotron p-3 p-md-5 text-white rounded bg-primary">
-        <div class="col-md-6 px-0">
-          <h1 class="display-4 font-italic text-white fw-bolder">Title of a longer featured blog post</h1>
-          <p class="lead my-3">Multiple lines of text that form the lede, informing new readers quickly and efficiently about what's most interesting in this post's contents.</p>
-          <p class="lead mb-0"><a href="#" class="btn btn-sm btn-outline-light">Continue reading...</a></p>
-        </div>
-      </section>
-      <section class="row mt-4">
-        
-        <div class="col-12" id="Products">
-          <section class="jumbotron p-1 p-md-2 text-white rounded bg-success mb-3">
-            <div class="col-md-6 px-0">
-              <span class="ont-italic text-white fw-bolder h3">Best Sels Products</span>
+       <!-- Product section-->
+       <section class="py-5">
+        <div class="container px-4 px-lg-5 my-5">
+            <div class="row gx-4 gx-lg-5 align-items-center" id="pr_c">
+                <div class="col-md-6" id="pic"><div class="spinner-border text-primary" role="status"><span class="visually-hidden">Loading...</span></div></div>
+                <div class="col-md-6">
+                    <div class="small mb-1">SKU: BST-498</div>
+                    <h1 class="h1 fw-bolder" id="title"><div class="spinner-border" role="status"><span class="visually-hidden">Loading...</span></div></h1>
+                    <div class="fs-5 mb-5">
+                        <span class="text-decoration-line-through" id="price-duble"></span>
+                        <span id="price"></span>
+                    </div>
+                    <p class="lead" id="desc"></p>
+                    <div class="d-flex">
+                        <input class="form-control text-center me-3" id="inputQuantity" type="num" value="1" style="max-width: 3rem" />
+                        <button class="btn btn-primary flex-shrink-0" type="button">
+                            <i class="bi-cart-fill me-1"></i>
+                            Add to cart
+                        </button>
+                    </div>
+                </div>
             </div>
-          </section>
         </div>
-      </section>
-      <section class="card">
-        <div class="card-body">
-          <div id="Categories_LIST" class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5"></div>
+    </section>
+    
+    <!-- Related items section-->
+    <section class="py-5 bg-light">
+        <div class="container px-4 px-lg-5 mt-5">
+            <h2 class="fw-bolder mb-4">Related products</h2>
+            <div id="Products" class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+                
+            </div>
         </div>
-      </section>
+    </section>
     </main>
     <footer class="py-3 my-4 shadow-lg bg-light">
         <ul class="nav justify-content-center border-bottom pb-3 mb-3">
@@ -99,7 +110,7 @@
     <script src="assets/js/init.js"></script>
     <!-- Scripts:START -->
     <script src="assets/js/bootstrap/bootstrap.bundle.js"></script>
-    <script src="assets/js/app.js"></script>
+    <script src="assets/js/single.js"></script>
     <!-- Scripts:END -->
 </body>
 </html>
