@@ -4,7 +4,7 @@ Rest.get('/products/categories')
   .then(function (response) {
     let Catli = document.querySelector('#Categories_LIST');
     response.data.forEach(cat => { 
-      Catli.innerHTML += `<li><a class="dropdown-item" href="#${cat}">${cat}</a></li>`;
+      Catli.innerHTML += `<li><a class="list-group-item" href="#${cat}"><i class="bi bi-archive"></i> ${cat}</a></li>`;
     });
   })
   .catch(function (error) {
