@@ -1,5 +1,5 @@
 
-const cart_user = 5;
+const cart_user = 1;
 let total_cart = 0;
 Rest.get('/carts/' + cart_user)
   .then(function (response) {
