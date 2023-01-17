@@ -1,4 +1,4 @@
-const {Rest} = require('./init');
+
 
 Rest.get('/products')
 .then(function (response) {

@@ -1,4 +1,4 @@
-const {Rest} = require('./init');
+
 
 // Example starter JavaScript for disabling form submissions if there are invalid fields
 // Refrence ==> https://getbootstrap.com/docs/5.3/forms/validation/
